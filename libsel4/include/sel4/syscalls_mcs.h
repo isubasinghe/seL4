@@ -164,6 +164,7 @@ seL4_NBRecv(seL4_CPtr src, seL4_Word *sender, seL4_CPtr reply);
  * as described in <autoref label="sec:messageinfo"/>
  * @endxmlonly
  */
+/** DONT_TRANSLATE */
 LIBSEL4_INLINE_FUNC seL4_MessageInfo_t
 seL4_NBSendRecv(seL4_CPtr dest, seL4_MessageInfo_t msgInfo, seL4_CPtr src, seL4_Word *sender, seL4_CPtr reply);
 

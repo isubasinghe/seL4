@@ -579,9 +579,11 @@ LIBSEL4_INLINE_FUNC seL4_MessageInfo_t seL4_Call(seL4_CPtr dest, seL4_MessageInf
 }
 
 #ifdef CONFIG_KERNEL_MCS
+/** DONT_TRANSLATE */
 LIBSEL4_INLINE_FUNC seL4_MessageInfo_t seL4_CallWithMRs(seL4_CPtr dest, seL4_MessageInfo_t msgInfo,
                                                         seL4_Word *mr0)
 #else
+/** DONT_TRANSLATE */
 LIBSEL4_INLINE_FUNC seL4_MessageInfo_t seL4_CallWithMRs(seL4_CPtr dest, seL4_MessageInfo_t msgInfo,
                                                         seL4_Word *mr0, seL4_Word *mr1)
 #endif

@@ -634,6 +634,7 @@ def generate_stub(arch, wordsize, interface_name, method_name, method_id, input_
     #   seL4_Untyped_Retype(...)
     #   {
     #
+    result.append("/** DONT_TRANSLATE */\n")
     result.append("LIBSEL4_INLINE %s" % return_type)
     result.append("%s_%s(%s)" % (interface_name, method_name,
                                  generate_param_list(input_params, output_params)))

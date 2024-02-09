@@ -47,6 +47,7 @@ seL4_Send(seL4_CPtr dest, seL4_MessageInfo_t msgInfo);
  * <docref>as described in <autoref label="sec:messageinfo"/></docref>
  * @endxmlonly
  */
+/** DONT_TRANSLATE */
 LIBSEL4_INLINE_FUNC seL4_MessageInfo_t
 seL4_Recv(seL4_CPtr src, seL4_Word *sender);
 
